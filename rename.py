@@ -14,13 +14,13 @@ print ("\nSmart albums count: {}".format(len(smart_albums)))
 for album in smart_albums:
 	print("\tTitle: {}. Type:{} Count:{}".format(album.title, album.type, len(album.assets)))
 	for asset in album.assets:
-		print("\t\tid:{}\tdate:{}".format(asset.id, asset.creation_date))
+		print("\t\tdate:{}\ttype:{}\tsubtypes:{}".format(asset.creation_date, asset.media_type, asset.media_subtypes))
 
 print ("\nOther albums count: {}".format(len(other_albums)))
 for album in other_albums:
 	print("\tTitle: {}. Type:{} Count:{}".format(album.title, album.type, len(album.assets)))
 	for asset in album.assets:
-		print("\t\tid:{}\tdate:{}".format(asset.id, asset.creation_date))
+		print("\t\tdate:{}\ttype:{}\tsubtypes:{}".format(asset.creation_date, asset.media_type, asset.media_subtypes))
 
 a = 25
 
